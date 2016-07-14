@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+	<head>
+		<!-- @include header.kit -->
+		<title>Contacto - RJM Asesores</title>
+	</head>
+	<body>
+		<!-- Main container -->
+		<div class="page-container">
+			
+			<!-- bloc-0 -->
+			<div class="bloc l-bloc bgc-white" id="bloc-0">
+				<div class="container bloc-sm">
+					<!-- @include menu.kit -->
+				</div>
+			</div>
+			<!-- bloc-0 END -->
+			<!-- bloc-9 -->
+			<div class="bloc bg-4 b-parallax  l-bloc" id="bloc-9">
+				<div class="container bloc-lg">
+					<div class="row">
+						<div class="col-sm-12 col-md-6 col-md-offset-3">
+							<form class="form-horizontal" name="commentform" method="post" action="contacto.php">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user"></i></span>
+									<input type="text" class="form-control" id="nombre" name="nombre" placeholder="nombre"/>
+								</div>
+								<br>
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-phone"></i></span>
+									<input type="text" class="form-control" id="telefono" name="telefono" placeholder="teléfono"/>
+								</div>
+								<br>
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+									<input type="text" class="form-control" id="email" name="email" placeholder="email"/>
+								</div>
+								<br>
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-edit"></i></span>
+									<div class="col-md-12 input-group">
+										<textarea rows="6" cols="62" class="form-control" id="comments" name="comments"
+										placeholder="mensaje"></textarea>
+									</div>
+								</div>
+								<br>
+								<br>
+								<button class="bloc-button btn btn-md btn-block" type="submit" id="send_btn">
+								ENVIAR
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- bloc-9 END -->
+			<!-- ScrollToTop Button -->
+			<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+			<!-- ScrollToTop Button END-->
+			<!-- Footer - bloc-10 -->
+			<!-- @include footer.kit -->
+			<!-- Footer - bloc-10 END -->
+		</div>
+		<!-- Main container END -->
+		
+	</body>
+
+	<script>
+    	$('#send_btn').popover({content: 'Gracias!'},'click');  
+	</script>
+	
+	<!-- Google Analytics -->
+	
+	<!-- Google Analytics END -->
+</html>
